@@ -126,8 +126,10 @@
     function hpClick() { /* for when someone clicks on HotPocket*/
     
         getAnswer()
-        document.getElementById("nHP").src = "img/notHpButtonGrey.png";
-        if (freeClick >0) {
+        
+        if (freeClick > 0) {
+            document.getElementById("nHP").src = "img/notHpButtonGrey.png";
+        
             if (hp == true) {
                 document.getElementById("answer").innerHTML = correct;
             } else {
@@ -140,8 +142,10 @@
      function notHpClick() { /* for when someone clicks on Not*/
 
         getAnswer()
-        document.getElementById("HP").src = "img/hpButtonGrey.png";
+        
         if (freeClick >0) {
+
+            document.getElementById("HP").src = "img/hpButtonGrey.png";
             if (hp == false) {
                 document.getElementById("answer").innerHTML = correct;
             } else {
